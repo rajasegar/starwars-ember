@@ -1,0 +1,69 @@
+:root {
+  --color-primary: #011627;
+    --color-secondary: #8b8c8a;
+    --color-danger: #e71d36;
+    --color-warning: #ff9f1c;
+    --color-info: #2ec4b6;
+    --color-background: #182b3a;
+    --color-black: #171817;
+    --color-overlay: rgba(253, 255, 252, 0.8);
+    --color-ember: #e04e39;
+    --color-burnt-ember: #9b2918;
+    --color-white: #fdfdfd;
+}
+
+* {
+  margin:0;
+  padding:0;
+  border: none;
+}
+
+body {
+  font-family: sans-serif;
+  background: var(--color-ember);
+  color: var(--color-white);
+}
+
+a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+nav ul {
+  display:flex;
+  background: var(--color-burnt-ember);
+  align-items:start;
+}
+
+li {
+  list-style: none;
+}
+
+nav ul li {
+  height: 3em;
+}
+
+nav a, nav span {
+  padding: 1em;
+  line-height:3em;
+}
+
+nav a.active, nav a:hover {
+  background: var(--color-ember);
+  color: var(--color-white);
+}
+
+main {
+  padding: 1em;
+}
+
+.list li {
+  margin: 1em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+

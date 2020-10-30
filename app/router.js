@@ -7,4 +7,8 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
+  this.route('people', function() {
+    this.route('show', { path: '/:people_id' });
+  });
+  this.route('planets');
 });
