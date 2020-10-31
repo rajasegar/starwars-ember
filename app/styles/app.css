@@ -85,4 +85,8 @@ table tr:even {
   background: var(--color-ember);
 }
 
-
+table a {
+  text-decoration: underline;
+  cursor: pointer;
+  padding:.25em;
+}

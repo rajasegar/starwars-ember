@@ -2,7 +2,7 @@
 <table>
   <tr>
     <td>Diameter:</td>
-    <td>{{@model.diameter}}</td>
+    <td>{{format-diameter @model.diameter}}</td>
   </tr>
   <tr>
     <td>Rotation Period:</td>
@@ -18,7 +18,7 @@
   </tr>
   <tr>
     <td>Population:</td>
-    <td>{{@model.population}}</td>
+    <td>{{format-population @model.population}}</td>
   </tr>
   <tr>
     <td>Climate:</td>
@@ -34,7 +34,7 @@
   </tr>
   <tr>
     <td>Residents:</td>
-    <td>{{@model.residents}}</td>
+    <td><LinkToPage @items={{@model.residents}} /></td>
   </tr>
   <tr>
     <td>Films:</td>

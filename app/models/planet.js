@@ -10,11 +10,11 @@ export default class PlanetModel extends Model {
   @attr climate;
   @attr terrain;
   @attr surface_water;
-  @attr residents;
   @attr films;
   @attr url;
   @attr created;
   @attr edited;
+  @attr residents;
 
 
 }

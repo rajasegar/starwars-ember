@@ -1,0 +1,7 @@
+{{#async-await this.links as |links|}}
+{{#each links as |i|}}
+  <p><LinkTo @route={{i.route}} @model={{i.model}}>{{i.text}}</LinkTo></p>
+{{/each}}
+{{else}}
+  <p>Loading...</p>
+{{/async-await}}
