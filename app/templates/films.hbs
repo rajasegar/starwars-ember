@@ -1,9 +1,8 @@
 <div class="grid">
   <div class="left-panel">
-    <h2>PeopleList</h2>
     <ul class="list">
-      {{#each @model.people as |p|}}
-        <li><LinkTo @route="people.show" @model={{p}}>{{p.name}}</LinkTo></li>
+      {{#each @model.films as |f|}}
+        <li><LinkTo @route="films.show" @model={{f}}>{{f.title}}</LinkTo></li>
       {{/each}}
     </ul>
   </div>

@@ -1,3 +1,5 @@
+@import "opening-crawl.css";
+
 :root {
   --color-primary: #011627;
     --color-secondary: #8b8c8a;
@@ -82,3 +84,5 @@ table tr::odd {
 table tr:even {
   background: var(--color-ember);
 }
+
+

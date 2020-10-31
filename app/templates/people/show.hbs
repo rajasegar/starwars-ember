@@ -10,7 +10,7 @@
   </tr>
   <tr>
     <td>Hair Color:</td>
-    <td>{{@model.hari_color}}</td>
+    <td>{{@model.hair_color}}</td>
   </tr>
   <tr>
     <td>Skin Color:</td>
@@ -30,7 +30,7 @@
   </tr>
   <tr>
     <td>Home world:</td>
-    <td>{{@model.homeworld}}</td>
+    <td><LinkTo @route="planets.show" @model={{"1"}}>Home world</LinkTo></td>
   </tr>
   <tr>
     <td>Films:</td>

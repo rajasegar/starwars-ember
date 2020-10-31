@@ -13,4 +13,13 @@ Router.map(function() {
   this.route('planets', function() {
     this.route('show', { path: '/:planet_id' });
   });
+  this.route('films', function() {
+    this.route('show', { path: '/:film_id' });
+  });
+  this.route('vehicles', function() {
+    this.route('show', { path: '/:vehicle_id' });
+  });
+  this.route('species', function() {
+    this.route('show', { path: '/:species_id' });
+  });
 });
