@@ -67,3 +67,18 @@ main {
 }
 
 
+table td {
+  padding: .5em;
+}
+
+table tr td:nth-child(1) {
+  font-weight: bold;
+}
+
+table tr::odd {
+  background: var(--color-burnt-ember);
+}
+
+table tr:even {
+  background: var(--color-ember);
+}

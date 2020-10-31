@@ -10,5 +10,7 @@ Router.map(function() {
   this.route('people', function() {
     this.route('show', { path: '/:people_id' });
   });
-  this.route('planets');
+  this.route('planets', function() {
+    this.route('show', { path: '/:planet_id' });
+  });
 });

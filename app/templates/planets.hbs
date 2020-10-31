@@ -1,1 +1,13 @@
+<div class="grid">
+  <div class="left-panel">
+<h2>Planets</h2>
+<ul class="list">
+{{#each @model.planets as |p|}}
+  <li><LinkTo @route="planets.show" @model={{p}}>{{p.name}}</LinkTo></li>
+{{/each}}
+</ul>
+  </div>
+  <div class="right-panel">
 {{outlet}}
+  </div>
+</div>
