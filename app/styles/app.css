@@ -31,6 +31,9 @@ a {
   text-decoration: none;
 }
 
+nav {
+  border-bottom: 10px solid var(--color-ember);
+}
 nav ul {
   display:flex;
   background: var(--color-burnt-ember);
@@ -56,11 +59,21 @@ nav a.active, nav a:hover {
 }
 
 main {
-  padding: 1em;
 }
 
-.list li {
-  margin: 1em;
+.list a {
+  cursor: pointer;
+  padding:0.5em 1em;
+  display: block;
+}
+
+.list a:hover {
+  background: var(--color-burnt-ember);
+}
+
+.list a.active {
+  background: var(--color-white);
+  color: var(--color-ember);
 }
 
 .grid {
@@ -68,6 +81,19 @@ main {
   grid-template-columns: 300px 1fr;
 }
 
+.left-panel {
+}
+
+.right-panel {
+  padding: 1em;
+  background: var(--color-white);
+  color: var(--color-ember);
+  height: 100vh;
+}
+
+.right-panel a {
+  color: var(--color-ember);
+}
 
 table td {
   padding: .5em;
@@ -89,4 +115,12 @@ table a {
   text-decoration: underline;
   cursor: pointer;
   padding:.25em;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vh;
+  height: 100%;
 }
