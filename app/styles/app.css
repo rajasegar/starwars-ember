@@ -124,3 +124,12 @@ table a {
   width: 100vh;
   height: 100%;
 }
+
+.search-box {
+    padding: 1em;
+    width: 240px;
+    margin-left: 1em;
+    border-radius: .25em;
+    margin-bottom: 1em;
+}
+
