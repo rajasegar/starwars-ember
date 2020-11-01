@@ -1,8 +1,8 @@
 <div class="grid">
   <div class="left-panel">
     <ul class="list">
-      {{#each @model.planets as |p|}}
-        <li><LinkTo @route="planets.show" @model={{p}}>{{p.name}}</LinkTo></li>
+      {{#each @model.starships as |p|}}
+        <li><LinkTo @route="starships.show" @model={{p}}>{{p.name}}</LinkTo></li>
       {{/each}}
     </ul>
   </div>

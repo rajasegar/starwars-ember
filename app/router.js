@@ -22,4 +22,7 @@ Router.map(function() {
   this.route('species', function() {
     this.route('show', { path: '/:species_id' });
   });
+  this.route('starships', function() {
+    this.route('show', { path: '/:starship_id' });
+  });
 });

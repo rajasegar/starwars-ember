@@ -15,7 +15,7 @@ export default class PlanetSerializer extends ApplicationSerializer {
     return obj;
   }
 
-  normalizeSingleResponse(store, primaryModelClass, payload, id, requestType) {
+  normalizeSingleResponse(store, primaryModelClass, payload, id) {
     const obj = {};
     obj.data = {};
     obj.data.type = primaryModelClass.modelName;

@@ -1,1 +1,12 @@
-{{outlet}}
+<div class="grid">
+  <div class="left-panel">
+    <ul class="list">
+      {{#each @model.species as |p|}}
+        <li><LinkTo @route="species.show" @model={{p}}>{{p.name}}</LinkTo></li>
+      {{/each}}
+    </ul>
+  </div>
+  <div class="right-panel">
+    {{outlet}}
+  </div>
+</div>

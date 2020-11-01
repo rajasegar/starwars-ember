@@ -1,5 +1,6 @@
 dependencies:
   ember-async-await-helper: 0.2.0
+  p-map: 4.0.0
 devDependencies:
   '@ember/optional-features': 2.0.0
   '@glimmer/component': 1.0.2
@@ -1789,6 +1790,15 @@ packages:
     dev: true
     resolution:
       integrity: sha1-/ts5T58OAqqXaOcCvaI7UF+ufh8=
+  /aggregate-error/3.1.0:
+    dependencies:
+      clean-stack: 2.2.0
+      indent-string: 4.0.0
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-4I7Td01quW/RpocfNayFdFVk1qSuoh0E7JrbRJ16nH01HhKFQ88INq9Sd+nd72zqRySlr9BmDA8xlEJ6vJMrYA==
   /ajv-errors/1.0.1_ajv@6.12.6:
     dependencies:
       ajv: 6.12.6
@@ -3819,6 +3829,12 @@ packages:
     hasBin: true
     resolution:
       integrity: sha1-vxlF6C/ICPVWlebd6uwBQA79A/8=
+  /clean-stack/2.2.0:
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-4diC9HaTE+KRAMWhDhrGOECgWZxoevMc5TlkObMqNSsVU62PYzXZ/SMTjzyGAFF1YusgxGcSWTEXBhp0CPwQ1A==
   /clean-up-path/1.0.0:
     dev: true
     resolution:
@@ -7024,6 +7040,12 @@ packages:
       node: '>=0.8.19'
     resolution:
       integrity: sha1-khi5srkoojixPcT7a21XbyMUU+o=
+  /indent-string/4.0.0:
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-EdDDZu4A2OyIK7Lr/2zG+w5jmbuk1DVBnEwREQvBzspBJkCEbRa8GxU1lghYcaGJCnRWibjDXlq779X1/y5xwg==
   /indexof/0.0.1:
     dev: true
     resolution:
@@ -8954,6 +8976,14 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-LaNjtRWUBY++zB5nE/NwcaoMylSPk+S+ZHNB1TzdbMJMny6dynpAGt7X/tl/QYq3TIeE6nxHppbo2LGymrG5Pw==
+  /p-map/4.0.0:
+    dependencies:
+      aggregate-error: 3.1.0
+    dev: false
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-/bjOqmgETBYB5BoEeGVea8dmvHb2m9GLy1E9W43yeyfP6QQCZGFNa+XRceJEuDB6zqr+gKpIAmlLebMpykw/MQ==
   /p-timeout/2.0.1:
     dependencies:
       p-finally: 1.0.0
@@ -11889,5 +11919,6 @@ specifiers:
   eslint-plugin-node: ^11.1.0
   loader.js: ^4.7.0
   npm-run-all: ^4.1.5
+  p-map: ^4.0.0
   qunit-dom: ^1.4.0
   surge: ^0.21.6

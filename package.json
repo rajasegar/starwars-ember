@@ -60,6 +60,7 @@
     "edition": "octane"
   },
   "dependencies": {
-    "ember-async-await-helper": "^0.2.0"
+    "ember-async-await-helper": "^0.2.0",
+    "p-map": "^4.0.0"
   }
 }
