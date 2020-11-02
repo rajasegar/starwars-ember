@@ -11,7 +11,8 @@
     --color-overlay: rgba(253, 255, 252, 0.8);
     --color-ember: #e04e39;
     --color-burnt-ember: #9b2918;
-    --color-white: #fdfdfd;
+    --color-ember-white: #fdfdfd;
+    --color-white: #fff;
 }
 
 * {
@@ -88,7 +89,7 @@ main {
   padding: 1em;
   background: var(--color-white);
   color: var(--color-ember);
-  height: 100vh;
+  /*height: 100vh;*/
 }
 
 .right-panel a {
@@ -101,6 +102,7 @@ table td {
 
 table tr td:nth-child(1) {
   font-weight: bold;
+  color: var(--color-burnt-ember);
 }
 
 table tr::odd {
@@ -125,7 +127,16 @@ table a {
   height: 100%;
 }
 
+.search-wrapper label {
+  margin-left: 1em;
+}
+
 .search-box {
+  display: grid;
+  grid-template-columns: 240px 42px;
+}
+
+.search-field {
     padding: 1em;
     width: 240px;
     margin-left: 1em;
@@ -133,3 +144,12 @@ table a {
     margin-bottom: 1em;
 }
 
+.clear-button {
+  float: right;
+  font-size: 1.5em;
+  height: 42px;
+  width: 42px;
+  border-radius: .25em;
+  cursor: pointer;
+  color: var(--color-burnt-ember);
+}

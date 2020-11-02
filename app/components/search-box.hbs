@@ -1,0 +1,9 @@
+<div class="search-wrapper">
+  <label for="search-box">Search People:</label>
+  <div class="search-box">
+    <Input id="search-box" type="text" placeholder="Search People" class="search-field" {{on "input" @search}}/>
+    {{#if @showClear}}
+      <button type="button" class="clear-button" {{on "click" @clearSearch}}>&times;</button>
+    {{/if}}
+  </div>
+</div>

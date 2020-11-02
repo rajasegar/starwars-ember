@@ -1,0 +1,14 @@
+<div class="search-wrapper">
+  <label for="search-box">Search:</label>
+  <div class="search-box">
+    <Input id="search-box" type="text" class="search-field" {{on "input" this.searchPeople}} @value={{this.query}}/>
+    {{#if this.showClear}}
+      <button type="button" class="clear-button" {{on "click" this.clearSearch}}>&times;</button>
+    {{/if}}
+  </div>
+</div>
+<ul class="list">
+  {{#each this.items as |p|}}
+    <li><LinkTo @route="people.show" @model={{p}}>{{p.name}}</LinkTo></li>
+  {{/each}}
+</ul>
