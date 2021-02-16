@@ -6,7 +6,7 @@ module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
     fingerprint: {
-      prepend: 'https://starwars-ember.surge.sh/'
+      prepend: 'https://starwars-ember.netlify.app/'
     }
   });
 
